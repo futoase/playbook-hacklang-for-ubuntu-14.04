@@ -12,3 +12,8 @@
   apt: name=hhvm
        state=latest
        update_cache=yes
+
+- name: install the git
+  apt: name=git
+       state=latest
+       update_cache=yes

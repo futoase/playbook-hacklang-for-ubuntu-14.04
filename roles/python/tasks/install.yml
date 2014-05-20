@@ -1,0 +1,10 @@
+---
+- name: install the python
+  apt: name=python
+       state=latest
+       update_cache=yes
+
+- name: install the pip
+  apt: name=python-pip
+       state=latest
+       update_cache=yes

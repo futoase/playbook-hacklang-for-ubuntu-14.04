@@ -1,0 +1,3 @@
+---
+- name: start up the supervisord
+  shell: /usr/bin/env supervisord -c /etc/supervisord.conf

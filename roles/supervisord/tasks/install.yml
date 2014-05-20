@@ -1,0 +1,15 @@
+---
+- name: install the supervisord
+  easy_install: name=supervisor
+
+- name: copy config file from host to guest
+  copy: src=supervisord.conf
+        dest=/etc/supervisord.conf
+
+- name: create directory for supervisord
+  file: state=directory
+        path=/var/log/supervisor
+        owner=root
+        group=root
+        mode=0755
+
